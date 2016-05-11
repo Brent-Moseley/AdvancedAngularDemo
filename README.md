@@ -1,8 +1,7 @@
 # AngularJS Advanced Coding Exercise / Tutorial
 
 This is a partially completed business administration web application written
-using AngularJS. This app will demonstrate a few of the more advanced Angular
-techniques including watches and directive to directive communication via
+using AngularJS. This very simple demo app will demonstrate a few of the more advanced Angular techniques including watches and directive to directive communication via
 shared controllers.
 
 # Editing Source Files
