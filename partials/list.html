@@ -1,0 +1,39 @@
+<div id="list-table">
+  <div id="list-table-title">
+    <p>Employee List</p>
+  </div>
+  <div id="list-table-heading">
+    <div class="list-table-cell">
+      <p>Employee ID</p>
+    </div>
+    <div class="list-table-cell">
+      <p>Name</p>
+    </div>
+    <div class="list-table-cell">
+      <p>Role</p>
+    </div>
+    <div class="list-table-cell">
+      <p>Age</p>
+    </div>
+    <div class="list-table-cell">
+      <p>Salary</p>
+    </div>
+  </div>
+  <div ng-repeat="employee in employeeList" class="list-table-row">
+    <div class="list-table-cell">
+      <p>{{employee.id}}</p>
+    </div>
+    <div class="list-table-cell">
+      <p>{{employee.name}}</p>
+    </div>
+    <div class="list-table-cell">
+      <p>{{employee.role}}</p>
+    </div>
+    <div class="list-table-cell">
+      <p>{{employee.age}}</p>
+    </div>
+    <div class="list-table-cell">
+      <p>{{employee.salary}}</p>
+    </div>
+  </div>
+</div>

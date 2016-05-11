@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="controllers.js"></script>
+    <script type="text/javascript" src="services.js"></script>
+    <script type="text/javascript" src="directives.js"></script>
+  </head>
+
+  <body ng-app="AngularApp">
+    <div id="app" ng-controller="MainController">
+      <div id="login" ng-hide="isAuthenticated">
+        <h1>Business Management</h1>
+        <form id=login-form ng-submit="checkLogin()">
+          <input type="text" ng-model="user.username" placeholder="Username"/>
+          <input type="password" ng-model="user.password" placeholder="Password"/>
+          <input type="submit" value="Log in"/>
+        </form>
+      </div>
+
+      <div id=home-main ng-hide="!isAuthenticated">
+        <div id="home" ng-controller="HomeController">
+          <!-- TODO:  update this nav with Bootstrap and the HTML5 nav tag. -->
+          <div id='home-div-nav'>
+            <ul id='home-nav'>
+              <li><a href='#list'>List Employees</a></li>
+              <li><a href='#listDirective'>List Employees Directive</a></li>
+              <li><a href='#' ng-click="logoutApp()">Logout</a></li>
+            </ul>
+            <span id="home-nav-logo">Business Management</span>
+          </div>
+          <div id="home-main-container">
+            <div id="home-main-div-container" class="ng-view"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>

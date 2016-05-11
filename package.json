@@ -1,0 +1,12 @@
+{
+  "name": "angularjs-1-x-interview-plunk",
+  "description": "AngularJS 1.x interview coding exercises",
+  "license": "UNLICENSED",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "./bin/www"
+  },
+  "dependencies": {
+  }
+}
